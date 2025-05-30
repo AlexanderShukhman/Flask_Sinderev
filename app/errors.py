@@ -8,7 +8,7 @@ def wants_json_response():
 
 
 def register_error_handlers(app, bp):
-    # Глобальные обработчики для всего приложения
+    # Глобальные обработчики  для всего приложения
     @app.errorhandler(404)
     def handle_app_404(error):
         return render_template('404.html'), 404
